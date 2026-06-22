@@ -4,6 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <title>HTML lesson 1</title>
+	<link rel="icon" href="bitcoin_2.svg" />
+	<style>
+		h2, h4, h6
+		{
+			text-align:center;
+			color:red;
+			font-family:'Segoe UI';
+		}
+		h4
+		{
+			color:darkgreen;
+		}
+	</style>
 </head>
 <body>
 	<details>
@@ -16,13 +29,31 @@
 		<h6>Заголовок 6</h6>
 		<p>Текст</p>
 	</details>
-	<details open>
+	<details>
 		<summary>Дескрипторы</summary>
-		<b><tt>&#60;	p	&#62;	</tt>(Paragraph)</b>	&#8211 этот дескриптор описывает абзац;<br/>
-		<b><tt>&lt;		b	&gt;	</tt>(bold)				&ndash;делает шрифт Жирным</b>;<br/>
-		<b><tt>&#60;	i	&#62;	</tt>(Italic)</b><i>		-делает шрифт курсивным Italic</i>;<br/>
-		<b><tt>&#60;	u	&#62;	</tt>(Underline)</b><u>		-делает шрифт подчёркнутым</u>;<br/>
-		<b><tt>&#60;	tt	&#62;	</tt>(Teletype text)</b><tt>-делает шрифт моноширным (каждый символ занимает площадь одинаковую площадь на экране)</tt>;<br/>
+		<h2>Дескрипторы физического форматирования</h2>
+		<b><code>&#60;	p	&#62;	</code>(Paragraph)		</b>	&#8211; этот дескриптор описывает абзац;<br>
+		<b><code>&lt;	b	&gt;	</code>(bold)				&ndash;делает шрифт Жирным</b>;<br>
+		<b><code>&#60;	i	&#62;	</code>(Italic)			</b><i>		-делает шрифт курсивным Italic</i>;<br>
+		<b><code>&#60;	u	&#62;	</code>(Underline)		</b><u>		-делает шрифт подчёркнутым</u>;<br>
+		<b><code>&#60;	tt	&#62;	</code>(Teletype text)	</b><code>-делает шрифт моноширным (каждый символ занимает площадь одинаковую площадь на экране)</code>;<br>
+		<b><code>&#60;	sup	&#62;	</code>(Superscript)	</b><code>-Верхний <sup>индекс</sup></code>;<br>
+		<b><code>&#60;	sub	&#62;	</code>(Subscript)		</b><code>-Нижний <sub>индекс</sub></code>;<br>
+		<b><code>&#60;	pre	&#62;	</code>(Preformatted)	</b>-Этот дескриптор создаёт предформатированный текст, в котором сохраняются отступы и <pre>переносы строк
+Кроме того предформатированный текст всегда отображается <b>моноширным</b> шрифтом;
+</pre><br>
+		<hr>
+		<h2>Дескрипторы логического форматирования</h2>
+		<strong><code>&#60;	em		&#62;</code> (Emphasis)		</strong> &#8211; делает шрифт <em>Курсивным(наклонным)</em> <br>
+		<strong><code>&#60;	strong	&#62;</code> (Bold)			</strong> &#8211; делает шрифт <strong>Жирным</strong> <br>
+		<strong><code>&#60;	code	&#62;</code> (Mono)			</strong> &#8211; делает шрифт <code>моноширным</code> <br>
+		<strong><code>&#60;	abbr	&#62;</code> (Abbreviation)	</strong> &#8211; Этим дескриптором следует выделять <abbr>аббревиатуры</abbr> <br>
+		<strong><code>&#60;	cite	&#62;</code> (Citation)		</strong> &#8211; Этим дескриптором следует выделять <cite>цитаты</cite> <br>
+		<hr>
 	</details>
+
+	<h2>CSS - Cascade Style Sheet Каскадные таблицы стилей</h2>
+
 </body>
 </html>
+
