@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Списки</title>
+	<style>
+		ol {
+			/*list-style:decimal;*/
+		}
+		/*ul
+		{
+			list-style:circle;
+			list-style-image:url("00-Intro/bitcoin.png");
+
+		}*/
+		/*ul {
+			list-style: none;*/ /* Убираем стандартные маркеры */
+		/*}
+
+		li {
+			position: relative;
+			padding-left: 30px;*/ /* Отступ слева для места под иконку */
+		/*}
+
+			li::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;*/ /* Выравниваем по вертикали */
+				/*transform: translateY(-50%);
+				width: 20px;*/ /* Задаем нужный размер */
+				/*height: 20px;*/ /* Задаем нужный размер */
+				/*background-image: url("00-Intro/bitcoin.png");
+				background-size: contain;*/ /* Масштабируем фон, чтобы иконка не искажалась */
+				/*background-repeat: no-repeat;
+				margin-right: 8px;*/ /* Пространство между иконкой и текстом */
+			/*}*/
+	</style>
+</head>
+<body>
+	<h1>Списки</h1>
+	<h2>Список определений</h2>
+	<p>Позволяет создавать списки Терминов с их разъяснением.</p>
+	<strong><code>&#60;dl&#62;</code></strong> Definitions list;<br>
+	<strong><code>&#60;dt&#62;</code></strong> Description term;<br>
+	<strong><code>&#60;dd&#62;</code></strong> Description details;<br>
+	<strong><code>&#60;dt&#62; </code></strong> u <strong><code>&#60;dd&#62;</code></strong> всегда используются парой.
+	<dl>
+		<dt>Нумерованный список</dt>
+		<dd>Позволяет нумеровать элементы текста. Это нужно для перечисления в строгом порядке.</dd>
+		<dt>Маркированный список</dt>
+		<dd>Позволяет нумеровать элементы текста. Это нужно для перечисления в любом порядке.</dd>
+		<dt>Список определений</dt>
+		<dd>Позволяет перечислять понятия и давать им определения.</dd>
+	</dl>
+	<hr />
+	<h2>Нумерованный список</h2>
+	<strong><code>&#60;ol&#62;</code></strong> Order list;<br>
+	<strong><code>&#60;li&#62;</code></strong> list item;<br>
+	<ol>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+		<li>List item 4</li>
+		<li>List item 5</li>
+	</ol>
+	<p>При необходимости список можно прервать и продолжить позже.</p>
+	<ol start="6">
+		<li>List item 6</li>
+		<li>List item 7</li>
+		<li>List item 8</li>
+		<li>List item 9</li>
+		<li>List item 10</li>
+	</ol>
+	<hr>
+	<h2>Маркированный список</h2>
+	<strong><code>&#60;ul&#62;</code></strong> UnOrder list;<br>
+	<strong><code>&#60;li&#62;</code></strong> list item;<br>
+	<ul>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+		<li>List item 4</li>
+		<li>List item 5</li>
+
+	</ul>
+
+</body>
+</html>
