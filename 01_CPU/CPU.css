@@ -3,10 +3,17 @@ body
 {
 	font-family:'Roboto Condensed';
 	font-size:18px;
+	padding:1% 5%;
 }
 p
 {
 	text-align:justify;
+}
+p:first-letter
+{
+	padding-left:1%;
+	font-size:200%;
+	font-family:'Rosewood Std';
 }
 figure
 {
@@ -17,4 +24,19 @@ figure
 ul
 {
 	list-style:none;
+}
+a
+{
+	text-decoration:none;
+}
+a:visited
+{
+	color:green;
+}
+
+a:hover
+{
+	font-weight:800;
+	background-color:black;
+	color: white;
 }
