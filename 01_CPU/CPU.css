@@ -1,11 +1,11 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-body
-{
-	font-family:'Roboto Condensed';
-	font-size:18px;
-	padding:1% 5%;
-	background-image:url('img/pcb.jpg');
-	
+body {
+	font-family: 'Roboto Condensed';
+	font-size: 18px;
+	padding: 1% 5%;
+	background-image: url('img/pcb.jpg');
+	text-shadow: 0 0 4px blanchedalmond, 0 0 4px blanchedalmond, 0 0 4px blanchedalmond, 0 0 4px blanchedalmond;
+	.border-tex
 }
 p {
 	text-align: justify;
