@@ -4,10 +4,15 @@ body
 	font-family:'Roboto Condensed';
 	font-size:18px;
 	padding:1% 5%;
+	background-image:url('img/pcb.jpg');
+	
 }
-p
-{
-	text-align:justify;
+p {
+	text-align: justify;
+	border-radius: 16px;
+	padding: 16px;
+	background-color: blanchedalmond;
+	box-shadow: 0 0 25px 25px rgb(220,220,220,.8);
 }
 p:first-letter
 {
@@ -40,3 +45,18 @@ a:hover
 	background-color:black;
 	color: white;
 }
+div {
+	border-radius: 16px;
+	background-color: blanchedalmond;
+	padding: 32px;
+}
+:target/* > span*/
+{
+	background-color:limegreen;
+}
+	:target + div
+	{
+		border-radius:16px;
+		background-color:blanchedalmond;
+		box-shadow: 0 0 25px 25px rgb(220,220,220,.8);
+	}
