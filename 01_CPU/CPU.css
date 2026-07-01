@@ -72,10 +72,11 @@ div {
 	border-radius: unset;
 	background-color: unset;
 	/*border: dotted 5px;*/
-	border-left: solid 10px;
+	border-left: dashed 10px;
 	border-color: brown;
 	margin: 0 0 0 20px;
 	padding: 20px;
+
 /*margin: all-sides*/
 /*margin: top-bottom left-right*/
 /*margin: top left-right bottom*/
@@ -86,9 +87,4 @@ div {
 /*padding: top left-right bottom*/
 /*padding: top right bottom left*/
 }
-/*div ~ .citation 
-{
-	padding: 0 0 0 150px;
-
-}*/
-
+/*---------------------------------------------------------------------*/
