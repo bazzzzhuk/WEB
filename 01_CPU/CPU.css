@@ -67,4 +67,28 @@ div {
 		background-color: rgba(255, 235, 205, 0.7);
 		box-shadow: 0 0 15px 15px rgb(220,220,220,.8);
 	}
+.citation
+{
+	border-radius: unset;
+	background-color: unset;
+	/*border: dotted 5px;*/
+	border-left: solid 10px;
+	border-color: brown;
+	margin: 0 0 0 20px;
+	padding: 20px;
+/*margin: all-sides*/
+/*margin: top-bottom left-right*/
+/*margin: top left-right bottom*/
+/*margin: top right bottom left*/
+
+/*padding: all-sides*/
+/*padding: top-bottom left-right*/
+/*padding: top left-right bottom*/
+/*padding: top right bottom left*/
+}
+/*div ~ .citation 
+{
+	padding: 0 0 0 150px;
+
+}*/
 
