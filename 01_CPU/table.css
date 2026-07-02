@@ -40,12 +40,70 @@ tr:nth-child(even)
 {
 	background-color:#7979bf7c;
 }
-tr:hover
+/*tr:hover
 {
 	box-shadow: inset 0 0 8px 8px rgb(220,220,220,0.8);
-}
+}*/
 
 tr:hover td:hover
 {
 	box-shadow: inset 0 0 8px 8px rgb(220,220,220,0.8);
+}
+.smile
+{
+	table-layout: auto;
+	border: unset;
+	width:320px;
+	/*height:160px;*/
+}
+	.smile > caption {
+		padding:0 0 10px 10px;
+		font-size: 100%;
+		color:#b65811;
+		text-shadow: 0 0 4px blanchedalmond, 0 0 4px blanchedalmond, 0 0 4px blanchedalmond, 0 0 4px blanchedalmond;
+	}
+.smile tr 
+{
+	width: 10px;
+	height: 10px;
+}
+.smile td
+{
+	border-color:#9a977b;
+	background-color:lightyellow;
+	width:10px;
+	height:10px;
+}
+
+.smile tr:nth-child(even)
+{
+	background-color: unset;
+}
+#orng{
+	background-color:orange;
+}
+#opcty{
+	background-color:#ffdb0036;
+}
+figure {
+	text-align: center;
+	font-style: italic;
+	font-weight: 500;
+	font-size: 120%;
+	color: #b65811;
+	text-shadow: 0 0 4px blanchedalmond, 0 0 4px blanchedalmond, 0 0 4px blanchedalmond, 0 0 4px blanchedalmond;
+}
+.rotated-text
+{
+	font-family:'Segoe Script';
+	font-style:normal;
+	font-weight: 800;
+	border-radius:unset;
+	border: unset;
+	background-color:unset;
+	text-align: left;
+	transform-origin:left;
+	margin:0 0 -30px 260px;
+	padding-left: 30px;
+	transform: rotate(-90deg); /* Поворачиваем текст на 90 градусов */
 }
