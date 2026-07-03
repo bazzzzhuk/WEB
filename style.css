@@ -38,7 +38,7 @@ summary
 .circle {
 	float: left;
 	height: 200px;
-	width: 200px;
+	width: 100px;
 	shape-outside: circle();
 	clip-path: circle();
 	background: linear-gradient(to top right, #FDB171, #FD987D);
