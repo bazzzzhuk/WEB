@@ -107,3 +107,9 @@ figure {
 	padding-left: 30px;
 	transform: rotate(-90deg); /* Поворачиваем текст на 90 градусов */
 }
+#home {
+	background-color: unset;
+}
+	#home a:hover {
+		background-color: yellow;
+	}
