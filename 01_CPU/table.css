@@ -111,5 +111,8 @@ figure {
 	background-color: unset;
 }
 	#home a:hover {
-		background-color: yellow;
+		background-color:unset;
+	}
+	#home img:hover {
+		background-color: greenyellow;
 	}
