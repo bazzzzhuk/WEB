@@ -8,7 +8,9 @@
 
 th, td {
 	border: solid 1px;
-	padding: 2px;
+	border-color: #0094ff;
+	border-radius: 4px;
+	padding: unset;
 }
 
 /*----------------------===-----------*/
@@ -30,18 +32,206 @@ th, td {
 /*---------------------------------*/
 .element {
 	width: 100%;
-	text-align:center;
+	/*height:200px;*/
+	text-align: center;
 	/*border: solid 1px;*/
 	margin: unset;
-	padding: unset;
+	padding: 2px;
 	/*border:unset;*/
+	background-color: #b6ff00;
 }
 
 	.element td {
 		padding: unset;
-		border:none;
+		/*border: initial;*/
+		/*border-color:#ffffff00;*/
 	}
 
 	.element tr {
-		/*border:none;*/
+	}
+
+
+.d29 {
+	border: unset;
+	color: #ffffff;
+	margin: 20px;
+	padding: 10px;
+	width: 24px;
+	height: 24px;
+	background: #0094ff;
+	border-radius: 30%/70%;
+	position: relative;
+	box-shadow: 0 0 5px 0 #0094ff, 0 0 5px 0 #0094ff, 0 0 5px 0 #0094ff, 0 0 5px 0 #0094ff;
+}
+
+	.d29:before {
+		border: unset;
+		margin: 20px;
+		padding: 10px;
+		z-index: -1;
+		content: "";
+		position: absolute;
+		top: 10%;
+		bottom: 10%;
+		right: -15%;
+		left: -15%;
+		background: inherit;
+		border-radius: 5%/50%;
+		box-shadow: 0 0 8px 0 #0094ff;
+	}
+
+.d28 {
+	border: unset;
+	height: 18px;
+	width: 64px;
+	margin: 6px;
+	position: relative;
+	z-index: -55;
+}
+
+	.d28:before,
+	.d28:after {
+		border: unset;
+		content: "";
+		height: 100%;
+		width: 50%;
+		position: absolute;
+		top: 0;
+		background: #F45919;
+		z-index: -55;
+	}
+
+	.d28:before {
+		border: unset;
+		left: 0;
+		transform: skew(0deg, 10deg);
+		z-index: -55;
+	}
+
+	.d28:after {
+		border: unset;
+		right: 0;
+		transform: skew(0deg, -10deg);
+		z-index: -55;
+	}
+
+.d37 {
+	border: unset;
+	width: 2em;
+	height: 2em;
+	margin: 1em 1em;
+	background: linear-gradient(to top left, #0094ff, #ffffff00);
+	border-radius: 30% 130%;
+	box-shadow: 7px 7px 5px 0 #0094ff, 7px 7px 5px 0 #0094ff;
+}
+
+.d37-2 {
+	border: unset;
+	width: 2em;
+	height: 2em;
+	margin: 1em 1em;
+	background: linear-gradient(to top right, #0094ff, #ffffff00);
+	border-radius: 130% 30%;
+	box-shadow: -7px 7px 5px 0 #0094ff, -7px 7px 5px 0 #0094ff;
+}
+
+.d12 {
+	border: unset;
+	margin-right: 2px;
+	width: 15px;
+	height: 10px;
+	transform: skew(-10deg);
+	background: linear-gradient(#0094ff, #ffffff00);
+	z-index: 55;
+}
+
+.element-blue {
+	width: 100%;
+	text-align: center;
+	/*border: solid 1px;*/
+	margin: unset;
+	padding: 2px;
+	/*border:unset;*/
+	background-color: #c0ffff;
+}
+
+	.element-blue td {
+		padding: unset;
+		border: none;
+	}
+
+	.element-blue tr {
+	}
+
+.d2 {
+	text-indent: 30%;
+	width: 100px;
+	height: 20px;
+	border-radius: 160px /30px; /* Горизонтальный радиус / вертикальный радиус */
+	/*border: 1px solid #000;*/ /* Обводка */
+	/*box-shadow: 0 0 5px 0 #0094ff, 0 0 5px 0 #0094ff;*/
+	background: transparent; /*Прозрачная заливка */
+}
+
+	.d2:nth-child(2n+1) {
+		filter: drop-shadow(black 3px 3px 2px);
+	}
+
+.d2-2 {
+	/*text-align:center;*/
+	position: page;
+	width: 80px;
+	height: 18px;
+	margin: 0 10px;
+	/*transform: rotate(-45deg);*/
+	border-radius: 200px /60px; /* Горизонтальный радиус / вертикальный радиус */
+	/*border: 1px solid #000;*/ /* Обводка */
+	/*box-shadow: 0 0 5px 0 #0094ff, 0 0 5px 0 #0094ff;*/
+	background: transparent; /*Прозрачная заливка */
+	/*border-radius: 120px /30px;*/ /* Горизонтальный радиус / вертикальный радиус */
+}
+
+	.d2-2:nth-child(2n+1) {
+		filter: drop-shadow(black 3px 3px 2px);
+	}
+
+.rot-1 {
+	text-indent: 50%;
+	position: absolute;
+	margin: -15px 0 0 -10px;
+	transform: rotate(-45deg);
+}
+
+.rot-2 {
+	text-indent: 50%;
+	position: absolute;
+	margin: -15px 0 0 -5px;
+	transform: rotate(45deg);
+}
+
+.circ {
+	position: page;
+	text-indent: 30%;
+	width: 18px;
+	height: 18px;
+	border-radius: 18px/18px;
+	background: transparent;
+}
+
+	.circ:nth-child(2n+1) {
+		filter: drop-shadow(black 3px 3px 2px);
+	}
+
+.centr {
+	z-index: 200;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	margin: -17px 0 0 24px;
+	border-radius: 16px/16px;
+	background: red;
+}
+
+	.centr:nth-child(10) {
+		filter: drop-shadow(black 3px 3px 2px);
 	}

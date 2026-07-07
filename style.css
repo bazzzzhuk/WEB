@@ -8,6 +8,7 @@ body
 	background-attachment:fixed;
 }
 #h1-home {
+	font-family: Roboto Condensed;
 	font-size: 64px;
 	font-weight: 1000;
 	text-shadow: -3px -3px 7px blanchedalmond, -3px -3px 7px blanchedalmond, -3px -3px 7px blanchedalmond;
@@ -37,10 +38,14 @@ summary
 }
 .circle {
 	float: left;
-	height: 200px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
 	shape-outside: circle();
 	clip-path: circle();
 	background: linear-gradient(to top right, #FDB171, #FD987D);
 }
 /*  ye */
+ol{
+	border: solid 1px;
+
+}
