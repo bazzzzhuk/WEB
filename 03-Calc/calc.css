@@ -4,6 +4,7 @@
 	background-position: center center; /* Центрируем изображение */
 	background-repeat: no-repeat; /* Не повторяем */
 	background-attachment: fixed; /* Фиксируем при прокрутке */
+	font-family:Tahoma;
 }
 
 .main-window {
@@ -13,12 +14,15 @@
 }
 
 .title-bar {
+	color:white;
+	text-shadow: 0 0 2px black;
 	width: 100%;
 	height: 38px;
-	background-color: cadetblue;
-	border-top-left-radius:8px;
-	border-top-right-radius:8px;
-
+	border: solid 1px rgb(45, 138, 141);
+	background-image: linear-gradient(rgb(172, 216, 217), rgb(95, 158, 160), rgb(95, 158, 160), rgb(45, 138, 141), rgb(45, 138, 141), rgb(17, 91, 94));
+	box-shadow: 0 0 5px 0 rgb(45, 138, 141) inset, 0 0 5px 0 rgb(45, 138, 141) inset, 0 0 5px 0 rgb(45, 138, 141) inset;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
