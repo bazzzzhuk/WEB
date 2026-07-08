@@ -53,12 +53,12 @@ th, td {
 
 .d29 {
 	border: unset;
-	color: #ffffff;
+	color: #b6ff00;
 	margin: 20px;
 	padding: 10px;
 	width: 24px;
 	height: 24px;
-	background: #0094ff;
+	background: #b6ff00;
 	border-radius: 30%/70%;
 	position: relative;
 	box-shadow: 0 0 5px 0 #0094ff, 0 0 5px 0 #0094ff, 0 0 5px 0 #0094ff, 0 0 5px 0 #0094ff;
@@ -214,9 +214,13 @@ th, td {
 	text-indent: 30%;
 	width: 18px;
 	height: 18px;
-	border-radius: 18px/18px;
+	border-radius: 50%;
 	background: transparent;
 }
+
+	.circ:nth-child(2n) {
+		filter: drop-shadow(black 3px 3px 2px);
+	}
 
 	.circ:nth-child(2n+1) {
 		filter: drop-shadow(black 3px 3px 2px);
@@ -228,7 +232,7 @@ th, td {
 	width: 8px;
 	height: 8px;
 	margin: -17px 0 0 24px;
-	border-radius: 16px/16px;
+	border-radius: 50%;
 	background: red;
 }
 
