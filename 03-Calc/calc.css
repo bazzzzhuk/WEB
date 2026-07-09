@@ -1,4 +1,5 @@
-﻿body {
+﻿/*https://habr.com/ru/articles/816349/   Flex*/
+body {
 	background-image: url("bliss.jpg");
 	background-size: cover; /* Подстраивается под окно */
 	background-position: center center; /* Центрируем изображение */
@@ -26,6 +27,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 2px;
 }
 
 .title-bar-left-side {
@@ -35,7 +37,7 @@
 
 .title-bar-right-side {
 	display: flex;
-	align-items: center;
+	/*align-items: flex-end;*/
 }
 
 .app-icon {
@@ -48,30 +50,48 @@
 }
 
 .control-button {
+	font-size: 24px;
 	color: white;
 	margin: 2px;
-	width: 24px;
-	height: 24px;
-	position: sticky;
-	text-emphasis-position:over;
+	width: 32px;
+	height: 32px;
+	/*position: sticky;
+	text-emphasis-position:over;*/
 	/*font-stretch: 250%;*/
-	font-weight: 800;
-	font-size:100%;
+	font-weight: 1000;
+	/*font-size:100%;*/
 	border: solid 1px rgb(95, 158, 160);
 	border-radius: 4px;
-	background-image: 
-		linear-gradient(to bottom right, 
-						rgb(172, 216, 217), 
-						rgb(95, 158, 160), 
-						rgb(17, 91, 94), 
-						rgb(7, 52, 53));
+	background-image: linear-gradient(to bottom right, rgb(172, 216, 217), rgb(95, 158, 160), rgb(17, 91, 94), rgb(7, 52, 53));
 	box-shadow: inset 1px 1px 1px 0px rgb(172, 216, 217);
 }
 
 .close-button {
 	background-image: linear-gradient(to bottom right, white, rgb(255, 0, 0) );
-	box-shadow: 
-		inset 1px 1px 2px 0px rgb(125, 38, 38), 
-		inset 1px 1px 2px 0px rgb(125, 38, 38), 
-		inset 1px 1px 2px 0px rgb(125, 38, 38);
+	box-shadow: inset 1px 1px 2px 0px rgb(125, 38, 38), inset 1px 1px 2px 0px rgb(125, 38, 38), inset 1px 1px 2px 0px rgb(125, 38, 38);
+}
+
+.fold-button {
+	justify-self: start;
+	padding-inline: 0px;
+	/*padding: 0px 0 32px 0;*/
+	top: 0;
+	/*font-size:100%;*/
+	/*padding:2px 2px 0px 2px;*/
+}
+
+.exp_{
+	padding-inline: 0px;
+	margin-top: -5px;
+	margin-left:-2px;
+}
+.exp-{
+	padding-inline: 0px;
+	margin-top: -6px;
+	margin-left:-3px;
+}
+.expx{
+	padding-inline: 0px;
+	margin-top: -3px;
+	margin-left:0px;
 }
