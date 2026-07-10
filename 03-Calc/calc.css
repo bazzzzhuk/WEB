@@ -64,6 +64,7 @@ body {
 	border-radius: 4px;
 	background-image: linear-gradient(to bottom right, rgb(172, 216, 217), rgb(95, 158, 160), rgb(17, 91, 94), rgb(7, 52, 53));
 	box-shadow: inset 1px 1px 1px 0px rgb(172, 216, 217);
+	
 }
 
 .close-button {
