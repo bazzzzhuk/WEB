@@ -37,7 +37,7 @@ body {
 
 .title-bar-right-side {
 	display: flex;
-	/*align-items: flex-end;*/
+	align-items: flex-end;
 }
 
 .app-icon {
@@ -66,11 +66,32 @@ body {
 	box-shadow: inset 1px 1px 1px 0px rgb(172, 216, 217);
 	
 }
+	.control-button:hover {
+		/*background-image:none;*/
+		/*background-image: linear-gradient(to bottom right, #ffffff2c, #AAAAAA2C);*/
+		/*background-color: rgb(255, 0, 0);*/
+		background-image: linear-gradient(
+			to bottom right, 
+			rgb(192, 248, 200), 
+			rgb(128, 198, 160), 
+			rgb(77, 91, 128), 
+			rgb(17, 152, 53)
+		);
+	}
+.control-button:active
+{
+	color:gray;
+	border-color: gray;
+}
 
 .close-button {
 	background-image: linear-gradient(to bottom right, white, rgb(255, 0, 0) );
 	box-shadow: inset 1px 1px 2px 0px rgb(125, 38, 38), inset 1px 1px 2px 0px rgb(125, 38, 38), inset 1px 1px 2px 0px rgb(125, 38, 38);
 }
+	.close-button:hover {
+		background-image: linear-gradient(to bottom right, rgb(255, 125, 125), rgb(91, 17, 17) );
+		box-shadow: inset 1px 1px 2px 0px rgb(125, 38, 38), inset 1px 1px 2px 0px rgb(125, 38, 38), inset 1px 1px 2px 0px rgb(125, 38, 38);
+	}
 
 .exp_{
 	margin-top: -5px;
@@ -84,3 +105,23 @@ body {
 	margin-top: -3px;
 	margin-left:0px;
 }
+
+.control-button[disabled], .control-button[disabled]:hover, .control-button[disabled]:active {
+	color: dimgrey;
+	border-color: dimgrey;
+	border: solid 1px rgb(95, 158, 160);
+	border-radius: 4px;
+	background-image: linear-gradient(to bottom right, rgb(172, 216, 217), rgb(95, 158, 160), rgb(17, 91, 94), rgb(7, 52, 53));
+	box-shadow: inset 1px 1px 1px 0px rgb(172, 216, 217);
+}
+/*.control-button[disabled]:hover
+{
+	background-image:unset;
+	color:darkgray;
+	border-color: darkgray;
+}
+.control-button[disabled]:active
+{
+	color:gray;
+	border-color: gray;
+}*/
