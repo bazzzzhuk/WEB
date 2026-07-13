@@ -148,6 +148,7 @@ body {
 
 .menu-button 
 {
+	color: rgb(7, 52, 53);
 	background-color:transparent;
 	border: none;
 }
@@ -168,7 +169,7 @@ body {
 }
 .display, .display:active
 {
-	width: 96%;
+	width: 88%;
 	border-radius:0;
 	border-color: rgb(172, 216, 217);
 	/*border-style:none;
@@ -179,4 +180,43 @@ body {
 input:focus-visible
 {
 	outline:none;
+}
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+/*.memory-buttons
+{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:50px;
+	padding:0px;
+}
+.memory-buttons > button
+{
+	height:32px;
+	margin:4px;
+}
+
+*/
+.square
+{
+	/*margin:4px;*/
+	border: solid 1px grey;
+	width: 32px;
+	height: 32px;
+}
+.calc-buttons
+{
+	margin:8px auto;
+	width: 90%;
+	height: 70%;
+	display:grid;
+	grid-template-rows: repeat(5, auto);
+	grid-template-columns: repeat(6, auto);
+	grid-gap:4px;
+}
+.clear-buttons
+{
+	grid-row:1;
+	grid-column-start:2;
+	grid-column-end:7;
 }
