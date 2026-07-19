@@ -49,3 +49,13 @@ ol{
 	border: solid 1px;
 
 }
+button 
+{
+	border:none;
+	background-color:transparent;
+}
+button:hover
+{
+	border:none;
+	background-color:#ffffff7f;
+}

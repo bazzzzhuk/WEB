@@ -2,8 +2,8 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>Introduction JavaScript</title>
+	<meta charset="utf-8" />
+	<title>Introduction JavaScript</title>
 	<link href="style.css" rel="stylesheet" />
 </head>
 <body>
@@ -93,7 +93,7 @@
 		let a = "5" - 3;
 		document.write(a);
 
-    </script>
+	</script>
 	<script>
 		function factorial()
 		{
@@ -123,7 +123,19 @@
 	<script>
 		function fibona44i()
 		{
-
+			let end_fibona44i = prompt('Введите предел счёта последовательности Фибоначчи:');
+			let temp_value;
+			let fibona44i_1 = 0;
+			let fibona44i_2 = 1;
+			let vyvod ='';
+			while (end_fibona44i >= fibona44i_2)
+			{
+				vyvod = vyvod + fibona44i_1 + "\n";
+				temp_value = fibona44i_2;
+				fibona44i_2 += fibona44i_1;
+				fibona44i_1 = temp_value;
+			}
+			alert(vyvod + '\n' + fibona44i_2 + ' < следующее число в последовательности Фибоначчи больше введенного предела в ' + end_fibona44i + '!');
 		}
 	</script>
 
