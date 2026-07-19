@@ -65,6 +65,8 @@
 		<summary>Домашние задания</summary>
 		<ol>
 			<li><button onclick="factorial()">Вычислить факториал числа, введенного с клавиатуры</button></li>
+			<li><button onclick="degree()">Возвести указанное число в указанную степень</button></li>
+			<li><button onclick="fibona44i()">Вывести на экран ряд Фибоначчи до указанного значения</button></li>
 		</ol>
 	</details>
 	<script>
@@ -92,15 +94,38 @@
 		document.write(a);
 
     </script>
-			<script>
-				function factorial()
+	<script>
+		function factorial()
+		{
+			let number_f = prompt('Введите число:');
+			let factorial = number_f;
+			let memory_number = number_f;
+			while (number_f > 1) factorial *= --number_f;//cout << factorial << endl;
+			alert('Факториал числа '+ memory_number + ' = ' + factorial);
+		}
+	</script>
+	<script>
+		function degree()
+		{
+			let number = prompt('Введите число возводимое в степень:');
+			let exp = prompt('Введите степень для числа '+ number + ' :');
+			let exp_m = exp;
+			let n = number;
+			let nn = number;
+			while (exp > 1)
 				{
-					let number_f = prompt('Введите число:');
-					let factorial = number_f;
-					let memory_number = number_f;
-while (number_f > 1) factorial *= --number_f;//cout << factorial << endl;
-alert('Факториал числа '+ memory_number + ' = ' + factorial);
+					number *= n;
+					--exp;
 				}
-			</script>
+				alert('Число '+ nn + " в степени "+exp_m+" = " + number);
+		}
+	</script>
+	<script>
+		function fibona44i()
+		{
+
+		}
+	</script>
+
 </body>
 </html>
