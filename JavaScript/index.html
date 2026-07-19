@@ -65,13 +65,6 @@
 		<summary>Домашние задания</summary>
 		<ol>
 			<li><button onclick="factorial()">Вычислить факториал числа, введенного с клавиатуры</button></li>
-			<script>
-				function factorial()
-				{
-					let factorial = prompt('Введите число:');
-
-				}
-			</script>
 		</ol>
 	</details>
 	<script>
@@ -99,5 +92,15 @@
 		document.write(a);
 
     </script>
+			<script>
+				function factorial()
+				{
+					let number_f = prompt('Введите число:');
+					let factorial = number_f;
+					let memory_number = number_f;
+while (number_f > 1) factorial *= --number_f;//cout << factorial << endl;
+alert('Факториал числа '+ memory_number + ' = ' + factorial);
+				}
+			</script>
 </body>
 </html>
