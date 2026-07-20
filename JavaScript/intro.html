@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Introduction JavaScript</title>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<details>
+		<summary>Введение</summary>
+		<h1>Introduction JavaScript</h1>
+		<p>
+			<strong>JavaScript</strong> &#8213; Это интерпретируемый язык программирования общего назначения с динамической типизацией данных.
+		</p>
+		<p>
+			<strong>Интерпретируемый</strong> &#8213; значит, что программа выполняется в исходном виде, т.е. исходный код не преобразуется в машинный или промежуточный код. В связи с этим ошибки на этапе компиляции и компоновки отсутствуют, только ошибки на этапе выполнения. Интерпретатор JavaScript может быть установлен в любую ОС как семейство виндовс, так и семейство Юникс. <br>Это даёт хорошую переносимость кода или кроссплатформенность. <br>JavaScript также иногда используют для разработки мобильных приложений под/для андроид.<br>JavaScript также часто используют в тестировании для написания скриптов, но несмотря на всё это чаще всего JavaScript используется для разработки веб-приложений, а именно фронт-энд части веб-приложения. И следовательно самым основным и распостраненным интерпретатором JavaScript является самый обычный браузер.
+		</p>
+		<p>
+			<strong>Динамическая типизация</strong> &#8213; говорит о том, что тип переменных и констант определяется во время присваивания по типу значения справа (r-value); Это в свою очередь означает то, что у переменной нет как такового постоянного типа данных. Например в переменную в которой хранится число можно записать строку и при записи она изменит тип. Это достигается благодаря тому, что абсолютно все типы являются объектами, а также благодаря полиморфизму.
+		</p>
+		<h2>Переменные и константы</h2>
+		<dl>
+			<dt> <code>var</code></dt>
+			<dd> Объявляет глобальную переменную несмотря на область видимости в которой объявлена. Если записать значение в несуществующую переменную, то это не вызовет ошибку - это будет аналогично ключевому слову <code>"var"</code></dd>
+			<dt> <code>let</code></dt>
+			<dd> Объявляет локальную переменную только для той области видимости в которой она используется.</dd>
+			<dt> <code>const</code></dt>
+			<dd> Объявляет константу. Константы могут быть только локальными.</dd>
+		</dl>
+	</details>
+	<details>
+		<summary>Типы данных</summary>
+		<h2>Типы данных</h2>
+		<!--Делятся на примитивные типы и объекты-->
+		<ol>
+			<li>
+				Примитивные типы:
+				<ul>
+					<li>
+						<code>boolean</code> &#8213; принимает одно из двух значений. <code>True/False</code><br />Значения: 0, null, '',"",`` неявно преобразуется в <code>False </code>
+						<br><code>True </code> это значение отличное от нуля или пустой строки.
+					</li>
+					<li> <code>String</code> &#8213; Объект описывающий массив символов. </li>
+					<li> <code>Number</code> &#8213; Вещественное (дробное) число которое является полным аналогом типа <code>double</code>. <br />Все числовые литералы неявно преобразуются в <code>Number</code></li>
+					<li> <code>Bigint</code> &#8213; целое число неограниченных размеров.</li>
+				</ul>
+			</li>
+			<li>
+				Объекты:
+				<ul>
+					<li> <code>Object</code> &#8213; </li>
+					<li> <code>Array</code> &#8213; </li>
+					<li> <code>Object</code> &#8213; </li>
+					<li> <code>Object</code> &#8213; </li>
+					<li> <code>Object</code> &#8213; </li>
+					<li> <code>Object</code> &#8213; </li>
+					<li> <code>Object</code> &#8213; </li>
+
+				</ul>
+			</li>
+		</ol>
+	</details>
+	<details>
+		<summary>Домашние задания</summary>
+		<ol>
+			<li><button onclick="factorial()">Вычислить факториал числа, введенного с клавиатуры</button></li>
+			<li><button onclick="degree()">Возвести указанное число в указанную степень</button></li>
+			<li><button onclick="fibona44i()">Вывести на экран ряд Фибоначчи до указанного значения</button></li>
+		</ol>
+	</details>
+	<script>
+        //alert("Hello!")
+        //var name = prompt("Введите Ваше Имя: ");
+        //alert(name);
+        //alert("Привет", name);
+        //alert('Привет, ' + prompt("Введите Ваше Имя: ") + '!!!');
+		//alert(`Привет ${prompt("Введите Ваше Имя: ")}.\n Это интерполяция строк`);
+        console.log("Отладочная информация. Чинить тут:");
+        document.write("<h2>Вывод на экран</h2>");
+        { const var1 = "var - Global variable"; }
+        { var1 = "const var - Global variable"; }//глобальная новая переменная
+        { let var1 = "let - Local variable"; }
+        document.write('==========================================\n');
+        document.write(var1+'\n');
+        document.write('==========================================\n');
+        //document.write(5);
+        //document.write(typeof (5));
+        let variable = Number("5");
+        document.write(variable);
+        document.write(typeof (variable));
+        document.write("<hr>");
+		let a = "5" - 3;
+		document.write(a);
+
+	</script>
+	<script>
+		function factorial()
+		{
+			let number_f = prompt('Введите число:');
+			let factorial = number_f;
+			let memory_number = number_f;
+			while (number_f > 1) factorial *= --number_f;//cout << factorial << endl;
+			alert('Факториал числа '+ memory_number + ' = ' + factorial);
+		}
+	</script>
+	<script>
+		function degree()
+		{
+			let number = prompt('Введите число возводимое в степень:');
+			let exp = prompt('Введите степень для числа '+ number + ' :');
+			//let exp_m = exp;
+			//let n = number;
+			//let nn = number;
+			//while (exp > 1)
+			//	{
+			//		number *= n;
+			//		--exp;
+			//	}
+			//	alert('Число '+ nn + " в степени "+exp_m+" = " + number);
+
+			alert(`${number}^${exp}=${number**exp}`);
+		}
+	</script>
+	<script>
+		function fibona44i()
+		{
+			let end_fibona44i = prompt('Введите предел счёта последовательности Фибоначчи:');
+			let temp_value;
+			let fibona44i_1 = 0;
+			let fibona44i_2 = 1;
+			let vyvod ='0\n' ;
+			while (end_fibona44i >= fibona44i_2)
+			{
+				vyvod = vyvod + fibona44i_2 + "\n";
+				temp_value = fibona44i_2;
+				fibona44i_2 += fibona44i_1;
+				fibona44i_1 = temp_value;
+			}
+			alert(vyvod + '\n' + fibona44i_2 + ' < следующее число в последовательности Фибоначчи больше введенного предела в ' + end_fibona44i + '!');
+		}
+	</script>
+
+</body>
+</html>
