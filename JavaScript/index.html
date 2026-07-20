@@ -109,15 +109,17 @@
 		{
 			let number = prompt('Введите число возводимое в степень:');
 			let exp = prompt('Введите степень для числа '+ number + ' :');
-			let exp_m = exp;
-			let n = number;
-			let nn = number;
-			while (exp > 1)
-				{
-					number *= n;
-					--exp;
-				}
-				alert('Число '+ nn + " в степени "+exp_m+" = " + number);
+			//let exp_m = exp;
+			//let n = number;
+			//let nn = number;
+			//while (exp > 1)
+			//	{
+			//		number *= n;
+			//		--exp;
+			//	}
+			//	alert('Число '+ nn + " в степени "+exp_m+" = " + number);
+
+			alert(`${number}^${exp}=${number**exp}`);
 		}
 	</script>
 	<script>
