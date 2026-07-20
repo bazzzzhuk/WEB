@@ -1,0 +1,31 @@
+﻿input, div, button {
+	font-size: 18px;
+	width:40%;
+}
+button
+{
+	width:20%;
+}
+input
+{
+	text-align:right;
+}
+
+.task {
+	width: 110%;
+	/*border-bottom:solid 1px;*/
+	display: flex;
+	align-items:center;
+}
+
+.result {
+	width: 55%;
+}
+.pair
+{
+	text-align:right;
+}
+label
+{
+	width:50%;
+}
