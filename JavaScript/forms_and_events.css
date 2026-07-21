@@ -7,11 +7,11 @@ button
 }
 input
 {
-	width:50px;
+	width:60px;
 }
 .task {
 	width: 110%;
-	/*border-bottom:solid 1px;*/
+	/*border:solid 1px;*/
 	/*display: flex;*/
 }
 
@@ -27,8 +27,10 @@ label
 {
 	width:50%;
 }
-#factorial-result
+.result
 {
+	border:dotted 1px;
+	width:422px;
 	overflow:scroll;
 	overflow-wrap:anywhere;
 }
