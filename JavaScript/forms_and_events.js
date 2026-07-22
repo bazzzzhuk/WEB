@@ -1,4 +1,4 @@
-// JavaScript source code
+ï»¿// JavaScript source code
 charset = "utf-8"
 function Factorial() {
 	let numberElement = document.getElementById("number");
@@ -28,5 +28,23 @@ function Fibona44i()
 		fibona44i_2 += fibona44i_1;
 		fibona44i_1 = temp_value;
 	}
-	document.getElementById("result_f").innerHTML = `${vyvod} <br> ${fibona44i_2} < ñëåäóþùåå ÷èñëî â ïîñëåäîâàòåëüíîñòè Ôèáîíà÷÷è áîëüøå ââåäåííîãî ïðåäåëà â ${end_fibona44i}!`
+	document.getElementById("result_f").innerHTML = `${vyvod} <br> ${fibona44i_2} < ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐµ Ñ‡Ð¸ÑÐ»Ð¾ Ð² Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¤Ð¸Ð±Ð¾Ð½Ð°Ñ‡Ñ‡Ð¸ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¿Ñ€ÐµÐ´ÐµÐ»Ð° Ð² ${end_fibona44i}!`
+}
+function setImage()
+{
+	let filename = document.getElementById("image-file");
+	let reader = new FileReader();
+	reader.onload = function (e)
+	{
+		document.getElementById("image").src = e.target.result;
+	}
+	reader.readAsDataURL(filename.files[0]);
+}
+function setBackgroundColor()
+{
+	document.body.style.backgroundColor = document.getElementById("background-color").value;
+}
+function setForegroundColor()
+{
+	document.body.style.color = document.getElementById("foreground-color").value;
 }

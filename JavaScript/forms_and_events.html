@@ -5,51 +5,71 @@
 	<meta charset="UTF-8" />
 	<link href="forms_and_events.css" rel="stylesheet" />
 	<title>Формы и события</title>
+	<script charset="utf-8" src="forms_and_events.js"></script>
 </head>
 <body>
-		<script charset="utf-8" src="forms_and_events.js"></script>
 	<h1>Формы и события</h1>
-	<hr />
-	<h2>Factorial</h2>
-	<div class="task">
-		<!--<div id="pair">-->
-		<label for="number">Введите целое число от 0 до ~ :</label>
-		<input id="number" type="number" min="0" onchange="Factorial()" />
-		<!--</div>-->
-		<button onclick="Factorial()">Вычислить</button>
-		<br />
-		<div id="result" class="result"></div>
-		<!--<input id="factorial-result" class="result" type="text">-->
-	</div>
-	<hr />
-	<!-- /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/-- -->
-	<h2>Power</h2>
-	<div class="task">
-		<!--<div id="pair">-->
-		<label for="number_p">Введите, возводимое в степень, целое число от 1 до ~ :</label>
-		<input id="number_p" type="number" min="1" onchange="Power()" /><br />
-		<label for="power_p" style="padding-left:35px">Введите целое число от 1 до ~ в качестве степени:</label>
-		<input id="power_p" type="number" min="1" onchange="Power()" /><br />
-		<div style="display:flex">
-			<div id="result_p" class="result"></div>
-			<button onclick="Power()">Вычислить</button>
+	<details>
+		<summary>Простейшие задачи</summary>
+		<hr />
+		<h2>Factorial</h2>
+		<div class="task">
+			<!--<div id="pair">-->
+			<label for="number">Введите целое число от 0 до ~ :</label>
+			<input id="number" type="number" min="0" onchange="Factorial()" />
+			<!--</div>-->
+			<button onclick="Factorial()">Вычислить</button>
+			<br />
+			<div id="result" class="result"></div>
+			<!--<input id="factorial-result" class="result" type="text">-->
 		</div>
-		<br />
-		<!--</div>-->
-	</div>
-	<hr /> 
-	<!-- /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/-- -->
-	<div class="task">
-		<h2>Фибоначчи</h2>
-		<!--<div id="pair">-->
-		<label for="number_f">Введите целое число от 1 до ~ :</label>
-		<input id="number_f" type="number" min="0" onchange="Fibona44i()" /><br />
-		<div style="display:flex">
-			<div id="result_f" class="result"></div>
-			<button onclick="Fibona44i()">Вычислить</button>
+		<hr />
+		<!-- /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/-- -->
+		<h2>Power</h2>
+		<div class="task">
+			<!--<div id="pair">-->
+			<label for="number_p">Введите, возводимое в степень, целое число от 1 до ~ :</label>
+			<input id="number_p" type="number" min="1" onchange="Power()" /><br />
+			<label for="power_p" style="padding-left:35px">Введите целое число от 1 до ~ в качестве степени:</label>
+			<input id="power_p" type="number" min="1" onchange="Power()" /><br />
+			<div style="display:flex">
+				<div id="result_p" class="result"></div>
+				<button onclick="Power()">Вычислить</button>
+			</div>
+			<br />
+			<!--</div>-->
 		</div>
-		<!--</div>-->
-	</div>
+		<hr />
+		<!-- /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/-- -->
+		<div class="task">
+			<h2>Фибоначчи</h2>
+			<!--<div id="pair">-->
+			<label for="number_f">Введите целое число от 1 до ~ :</label>
+			<input id="number_f" type="number" min="0" onchange="Fibona44i()" /><br />
+			<div style="display:flex">
+				<div id="result_f" class="result"></div>
+				<button onclick="Fibona44i()">Вычислить</button>
+			</div>
+			<!--</div>-->
+		</div>
+	</details>
+	<!-- /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/-- -->
+	<div class="images-and-colors">
+		<div class="upload-image">
+			<div class="image-container">
+				<img alt="Фото студента" id="image" />
+			</div>
+			<input type="file" id="image-file" onchange="setImage()" />
+		</div>
 
+		<div class="select-colors">
+			<label for="background-color">Цвет фона</label>
+			<input type="color" id="background-color" value="white" oninput="setBackgroundColor()"/>
+		</div>
+		<div class="select-colors">
+			<label for="foreground-color">Цвет текста</label>
+			<input type="color" id="foreground-color" value="black" oninput="setForegroundColor()"/>
+		</div>
+	</div>
 </body>
 </html>

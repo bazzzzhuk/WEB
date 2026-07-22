@@ -9,6 +9,10 @@ input
 {
 	width:60px;
 }
+#image-file
+{
+	width:360px;
+}
 .task {
 	width: 110%;
 	/*border:solid 1px;*/
@@ -33,4 +37,23 @@ label
 	width:422px;
 	overflow:scroll;
 	overflow-wrap:anywhere;
+}
+.images-and-colors
+{
+	width:80%;
+	display:flex;
+	justify-content: space-between;
+}
+.image-container {
+	border: solid 1px;
+}
+.image-container, #image {
+	width: 400px;
+	height: 300px;
+}
+.select-colors
+{
+	display:flex;
+	justify-content:space-between;
+	margin:12px;
 }
