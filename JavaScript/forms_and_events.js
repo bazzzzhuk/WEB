@@ -57,9 +57,14 @@ function setColor(event)
 	=== - сравнивает два значения и типы этих значений
 	=== возвращает true только в том случае, если совпадают как значения, так и типы.
 	*/
-	if (event.target.id === 'background-color')
-	{
-		document.body.style.backgroundColor = event.target.value;
-	}
-	else {document.body.style.color = event.target.value;}
+	//(event.target.id === 'background-color' ?
+	//	document.body.style.backgroundColor :
+	//	document.body.style.color) = event.target.value;
+	document.body.style[(event.target.id === 'background-color' ? 'backgroundColor' : 'color')] = event.target.value;
+	//if (event.target.id === 'background-color')
+	//{
+	//	document.body.style.backgroundColor = event.target.value;
+	//}
+	//else {document.body.style.color = event.target.value;}
 }
+document.body['style']['color'];
