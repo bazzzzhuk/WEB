@@ -66,5 +66,17 @@ function setColor(event)
 	//	document.body.style.backgroundColor = event.target.value;
 	//}
 	//else {document.body.style.color = event.target.value;}
+//document.body['style']['color']='white';
 }
-document.body['style']['color'];
+document.addEventListener("mousemove", traceMouse);
+function traceMouse(e)
+{
+	document.getElementById("mouse").innerHTML = `X = ${e.clientX}, Y=${e.clientY}`;
+}
+//document.getElementById("switch-background").addEventListener("click", switchBackground);
+document.getElementById("switch-background").addEventListener("click", switchBackground);
+function switchBackground(e)
+{
+	document.getElementById("debug-background").innerHTML =
+		document.getElementById("switch-background").src;
+}

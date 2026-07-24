@@ -1,4 +1,25 @@
-﻿input, div, button {
+﻿.header
+{
+	display:flex;
+	justify-content: space-between;
+}
+.header img
+{
+	width:24px;
+	height:24px;
+}
+.dark
+{
+	background-color:#323232;
+	color:#C8C8C8;
+}
+.light 
+{
+	background-color: white;
+	color: black;
+}
+
+input, div, button {
 	font-size: 18px;
 }
 button
@@ -42,7 +63,7 @@ label
 {
 	width:80%;
 	display:flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 }
 .image-container {
 	border: solid 1px;
@@ -56,4 +77,11 @@ label
 	display:flex;
 	justify-content:space-between;
 	margin:12px;
+}
+#mouse
+{
+	border: solid 1px;
+	width: 200px;
+	height:24px;
+	text-align:center;
 }
