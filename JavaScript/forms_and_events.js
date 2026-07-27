@@ -60,7 +60,10 @@ function setColor(event)
 	//(event.target.id === 'background-color' ?
 	//	document.body.style.backgroundColor :
 	//	document.body.style.color) = event.target.value;
+	//let transition = document.body.style.transition.value.;
+	//document.body.style.transition.value = null;
 	document.body.style[(event.target.id === 'background-color' ? 'backgroundColor' : 'color')] = event.target.value;
+	//document.body.style.transition.value = transition;
 	//if (event.target.id === 'background-color')
 	//{
 	//	document.body.style.backgroundColor = event.target.value;
@@ -77,6 +80,7 @@ function traceMouse(e)
 document.getElementById("switch-background").addEventListener("click", switchBackground);
 function switchBackground(e)
 {
+
 	/*let skin = document.body.className;
 	let switchButton = document.getElementById("switch-background");
 	switchButton.src = skin === "dark" ? "moon.png" : 'sun.png';
@@ -84,6 +88,8 @@ function switchBackground(e)
 	//document.getElementById("debug-background").innerHTML = switchButton.src;
 	document.getElementById("debug-background").innerHTML = document.body.className;
 	*/
+	document.body.style.backgroundColor = '';
+	document.body.style.color = '';
 	document.body.className = document.body.className === 'dark' ? 'light' : 'dark';
 	document.getElementById("debug-background").innerHTML = document.body.className;
 }
@@ -95,3 +101,22 @@ function setDelay(e)
 		document.body.style.transition =
 		`color ${delay}s, background-color ${delay}s, background-image ${delay}s`;
 }
+
+/*--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--| */
+function addLeadingZero(number) { return number < 10? "0"+`${number}`:`${number}`};
+function tickTimer()
+{
+	let date = new Date();
+	document.getElementById("raw-date").innerHTML = date.toString();
+
+	document.getElementById("hours").innerHTML = addLeadingZero(date.getHours());
+	document.getElementById("minutes").innerHTML = addLeadingZero(date.getMinutes());
+	document.getElementById("seconds").innerHTML = addLeadingZero(date.getSeconds());
+
+	document.getElementById("yers").innerHTML = addLeadingZero(date.getFullYear());
+	document.getElementById("months").innerHTML = addLeadingZero(date.getMonth()+1);
+	document.getElementById("days").innerHTML = addLeadingZero(date.getDate());
+
+	setTimeout(tickTimer, 100);
+}
+tickTimer();

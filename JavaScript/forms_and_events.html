@@ -70,23 +70,44 @@
 		</div>
 	</details>
 	<!-- /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/-- -->
-	<div class="images-and-colors">
-		<div class="upload-image">
-			<div class="image-container">
-				<img alt="Фото студента" id="image" />
+	<details>
+		<summary>Фото и цвета</summary>
+		<div class="images-and-colors">
+			<div class="upload-image">
+				<div class="image-container">
+					<img alt="Фото студента" id="image" />
+				</div>
+				<input type="file" id="image-file" onchange="setImage()" />
 			</div>
-			<input type="file" id="image-file" onchange="setImage()" />
-		</div>
 
-		<div class="select-colors">
-			<label for="background-color">Цвет фона</label>
-			<input type="color" id="background-color" value="white" oninput='setColor(event)' />
+			<div class="select-colors">
+				<label for="background-color">Цвет фона</label>
+				<input type="color" id="background-color" value="white" oninput='setColor(event)' />
+			</div>
+			<div class="select-colors">
+				<label for="foreground-color">Цвет текста</label>
+				<input type="color" id="foreground-color" value="black" oninput="setColor(event)" />
+			</div>
 		</div>
-		<div class="select-colors">
-			<label for="foreground-color">Цвет текста</label>
-			<input type="color" id="foreground-color" value="black" oninput="setColor(event)" />
+	</details>
+	<!-- /--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/-- -->
+	<h2 id="raw-date"></h2>
+	<div id="clock">
+	<h2>Time</h2>
+		<div id="current-time">
+			<span id="hours"></span> :
+			<span id="minutes"></span> :
+			<span id="seconds"></span>
 		</div>
+		<div id="current-date">
+			<span id="yers"></span> .
+			<span id="months"></span> .
+			<span id="days"></span>
+		</div>
+		<div id="day-of-week"></div>
+
 	</div>
+
 	<!--document.body['style']['color']='white';-->
 	<script charset="utf-8" src="forms_and_events.js"></script>
 </body>
