@@ -41,7 +41,16 @@
 {
 	background-image:url("moon.png");
 }
-
+/*/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--*/
+#switch-bg-container, #switch-bg-container > div
+{
+	display:flex;
+	background-repeat:no-repeat;
+	width:30%;
+	justify-content: space-evenly;
+	/*padding: 0 8px;*/
+}
+/*/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--*/
 input, div, button {
 	font-size: 18px;
 }

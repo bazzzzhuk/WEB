@@ -87,3 +87,11 @@ function switchBackground(e)
 	document.body.className = document.body.className === 'dark' ? 'light' : 'dark';
 	document.getElementById("debug-background").innerHTML = document.body.className;
 }
+document.getElementById("switch-bg-delay").addEventListener("change", setDelay);
+function setDelay(e)
+{
+	let delay = e.target.value;
+	document.getElementById('switch-background').style.transition =
+		document.body.style.transition =
+		`color ${delay}s, background-color ${delay}s, background-image ${delay}s`;
+}
