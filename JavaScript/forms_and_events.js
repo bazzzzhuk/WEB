@@ -117,6 +117,15 @@ function tickTimer()
 	document.getElementById("months").innerHTML = addLeadingZero(date.getMonth()+1);
 	document.getElementById("days").innerHTML = addLeadingZero(date.getDate());
 
+	//document.getElementById("day-of-week").innerHTML = date.toLocaleDateString("ru");
+	//document.getElementById("day-of-week").innerHTML = date.toLocaleTimeString("ru", {weekday:"long"});
+	document.getElementById("day-of-week").innerHTML = date.toLocaleDateString("ru", { weekday: "long" });
+
+	document.getElementById("current-date").style.visibility =
+		document.getElementById("show-date").checked ? 'visible' : 'hidden';
+	document.getElementById("day-of-week").style.visibility =
+		document.getElementById("show-weekday").checked ? 'visible' : 'hidden';
+
 	setTimeout(tickTimer, 100);
 }
 tickTimer();

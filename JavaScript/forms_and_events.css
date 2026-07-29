@@ -135,3 +135,10 @@ label
 	flex-direction:column;
 	text-align:center;
 }
+#clock #clock-controls 
+{
+	font-size: 18px;
+	align-self:center;
+	text-align:left;
+	
+}
