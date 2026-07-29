@@ -1,4 +1,9 @@
-﻿body, #switch-background
+﻿@font-face
+{
+	font-family:Digital-7 Mono;
+	src:url('digital-7 (mono).ttf');
+}
+body, #switch-background
 {
 	transition: color 3s, background-color 3s, background-image 3s;
 }
@@ -124,6 +129,7 @@ label
 }
 #clock
 {
+	font-family:'Digital-7 Mono';
 	width:99%;
 	display:flex;
 	flex-direction:column;
