@@ -165,11 +165,28 @@ function tickCountdown()
 	targetTimeValue.setMonth(targetDateValue.getMonth());
 	targetTimeValue.setDate(targetDateValue.getDate());
 
-	let duration = targetTimeValue - now;
+	let timestamp = targetTimeValue - now;
+	let duration = Math.trunc(timestamp / 1000);
+	document.getElementById("timestamp").innerHTML = timestamp;
 	document.getElementById("duration").innerHTML = duration;
 
 	document.getElementById("target-date-value").innerHTML = targetDateValue;
 	document.getElementById("target-time-value").innerHTML = targetTimeValue;
+
+	const SECONDS_PER_MINUTE = 60;
+	const SECONDS_PER_HOUR = 3600;
+	const SECONDS_PER_DAY = 86400;
+
+	let time_of_day = duration % SECONDS_PER_DAY;
+	let time_of_hour = Math.trunc(time_of_day / SECONDS_PER_HOUR);
+	time_of_day = time_of_day % SECONDS_PER_HOUR;
+	let time_of_minute = Math.trunc(time_of_day / SECONDS_PER_MINUTE);
+	time_of_day = time_of_day % SECONDS_PER_MINUTE;
+
+	document.getElementById('hours-unit').innerHTML = addLeadingZero(time_of_hour);
+	document.getElementById('minutes-unit').innerHTML = addLeadingZero(time_of_minute);
+	document.getElementById('seconds-unit').innerHTML = addLeadingZero(time_of_day);
+	
 
 	setTimeout(tickCountdown, 100);
 }
